@@ -79,8 +79,10 @@ Changes in `aws-quiz/app.py` plus a new `aws-quiz/templates/login.html`.
 
 ### Configuration
 
-- New env var **`APP_PASSWORD`** — the shared gate password. If unset, the app
-  should fail fast / log a clear warning (no silent open access in production).
+- New env var **`APP_PASSWORD`** — the shared gate password. **If unset, the app
+  fails fast at startup** (raise `RuntimeError` / exit with a clear message) so it
+  can never be deployed with no gate. There is no default and no open-access
+  fallback.
 - Reuses existing **`SECRET_KEY`** to sign the session cookie. Must be a fixed
   value in production so sessions survive restarts (already env-configurable).
 - `app.permanent_session_lifetime = timedelta(days=30)` so a phone stays logged
