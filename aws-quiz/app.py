@@ -4,7 +4,8 @@
 import json
 import os
 import secrets
-from flask import Flask, render_template, jsonify, request, session
+from datetime import timedelta
+from flask import Flask, render_template, jsonify, request, session, redirect, url_for
 from models import (
     init_db, get_questions_for_session, get_question,
     record_answer, get_dashboard_stats, get_filter_counts, get_all_tags,
@@ -15,6 +16,15 @@ VALID_FILTERS = {'all', 'new', 'wrong', 'due'}
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', secrets.token_hex(32))
+
+APP_PASSWORD = os.environ.get('APP_PASSWORD')
+if not APP_PASSWORD:
+    raise RuntimeError(
+        "APP_PASSWORD environment variable is not set. "
+        "Refusing to start without a password gate."
+    )
+
+app.permanent_session_lifetime = timedelta(days=30)
 
 @app.before_request
 def ensure_db():
