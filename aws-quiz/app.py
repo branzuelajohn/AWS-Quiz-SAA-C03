@@ -4,7 +4,8 @@
 import json
 import os
 import secrets
-from flask import Flask, render_template, jsonify, request, session
+from datetime import timedelta
+from flask import Flask, render_template, jsonify, request, session, redirect, url_for
 from models import (
     init_db, get_questions_for_session, get_question,
     record_answer, get_dashboard_stats, get_filter_counts, get_all_tags,
@@ -16,6 +17,15 @@ VALID_FILTERS = {'all', 'new', 'wrong', 'due'}
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', secrets.token_hex(32))
 
+APP_PASSWORD = os.environ.get('APP_PASSWORD')
+if not APP_PASSWORD:
+    raise RuntimeError(
+        "APP_PASSWORD environment variable is not set. "
+        "Refusing to start without a password gate."
+    )
+
+app.permanent_session_lifetime = timedelta(days=30)
+
 @app.before_request
 def ensure_db():
     """Ensure database is initialized."""
@@ -24,10 +34,41 @@ def ensure_db():
 @app.before_request
 def csrf_check():
     """Reject POST requests without JSON content type (CSRF protection)."""
+    # The login form posts form-encoded data; it is exempt from the JSON check.
+    if request.endpoint == 'login':
+        return
     if request.method == 'POST' and request.content_type != 'application/json':
         return jsonify({'error': 'Content-Type must be application/json'}), 415
 
+@app.before_request
+def require_login():
+    """Gate every route behind the shared password."""
+    if request.endpoint in ('login', 'logout', 'static'):
+        return
+    if not session.get('authenticated'):
+        if request.path.startswith('/api/'):
+            return jsonify({'error': 'Not authenticated'}), 401
+        return redirect(url_for('login'))
+
 # --- Page Routes ---
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    """Shared-password login."""
+    if request.method == 'POST':
+        password = request.form.get('password', '')
+        if secrets.compare_digest(password.encode('utf-8'), APP_PASSWORD.encode('utf-8')):
+            session['authenticated'] = True
+            session.permanent = True
+            return redirect(url_for('index'))
+        return render_template('login.html', error='Incorrect password'), 401
+    return render_template('login.html', error=None)
+
+@app.route('/logout')
+def logout():
+    """Clear the session and return to the login page."""
+    session.clear()
+    return redirect(url_for('login'))
 
 @app.route('/')
 def index():
