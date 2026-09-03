@@ -7,6 +7,7 @@ services:
       - "5050:5050"
     environment:
       - SECRET_KEY=${SECRET_KEY:-}
+      - APP_PASSWORD=${APP_PASSWORD:?APP_PASSWORD must be set (e.g. in a .env file)}
     volumes:
       # Persist quiz progress data
       - quiz-data:/app/data

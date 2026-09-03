@@ -197,13 +197,35 @@ environment:
   - SECRET_KEY=your-secret-key-here
 ```
 
+### Password (required)
+The app is gated behind a single shared password. It **will not start** unless `APP_PASSWORD` is set — this prevents accidentally exposing an open instance when hosting publicly.
+
+```bash
+# Docker Compose: put it in a .env file next to docker-compose.yml
+echo "APP_PASSWORD=your-strong-password" >> .env
+echo "SECRET_KEY=$(openssl rand -hex 32)" >> .env
+docker-compose up -d
+```
+
+Set a persistent `SECRET_KEY` in production too, so your login session survives restarts (see above).
+
+### Deploying to Railway / Render / Fly.io
+Host on a platform with a **persistent disk** — **not Vercel** (its filesystem is ephemeral, so the SQLite database and all your progress would be wiped on every cold start).
+
+1. Point the platform at this repo; it builds `aws-quiz/Dockerfile` automatically.
+2. Set environment variables: `APP_PASSWORD` (required) and `SECRET_KEY` (a fixed random value).
+3. Mount a persistent volume at `/app/data` so `quiz.db` (your progress) survives restarts.
+4. The container binds to the platform-provided `$PORT` automatically (falls back to 5050 locally).
+
 ### Port
-Default port is `5050`. To change, edit `docker-compose.yml`:
+Locally the app listens on `5050`. To change the host mapping, edit `docker-compose.yml`:
 
 ```yaml
 ports:
   - "8080:5050"  # Access on port 8080
 ```
+
+When deployed, the container honors the `PORT` environment variable set by the host (Railway/Render/Fly), defaulting to `5050`.
 
 ### Data Persistence
 Quiz progress is stored in a Docker volume (`quiz-data`). To backup:
