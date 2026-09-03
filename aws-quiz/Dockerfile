@@ -31,5 +31,6 @@ ENV PYTHONUNBUFFERED=1
 # Expose port
 EXPOSE 5050
 
-# Run with gunicorn for production
-CMD exec gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 app:app
+# Seed the database on startup (idempotent — skips already-imported questions),
+# so a freshly-mounted persistent volume at /app/data gets populated, then serve.
+CMD python import_questions.py && exec gunicorn --bind 0.0.0.0:${PORT:-5050} --workers 2 app:app
