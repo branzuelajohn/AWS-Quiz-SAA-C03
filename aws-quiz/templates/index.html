@@ -207,7 +207,7 @@
                                 'bg-gray-700 opacity-50': answered && key !== correctAnswer && key !== selectedAnswer
                             }"
                             class="w-full p-4 rounded-lg text-left transition flex items-start gap-3">
-                            <span class="bg-gray-600 px-2 py-1 rounded text-sm font-mono" x-text="key"></span>
+                            <span class="bg-gray-600 px-2 py-1 rounded text-sm font-mono" x-text="keyToNumber(key)"></span>
                             <span x-text="text"></span>
                         </button>
                     </template>
@@ -529,6 +529,18 @@
                     this.sessionAnswers = [];
                     // Refresh filter counts
                     this.updateCounts();
+                },
+
+                keyToNumber(key) {
+                    // Map stored letter key(s) to displayed number(s): A->1 ... D->4.
+                    // Handles multi-letter keys defensively (e.g. "AB" -> "12").
+                    if (key === null || key === undefined) return key;
+                    return String(key).split('').map(c => c.charCodeAt(0) - 64).join('');
+                },
+
+                numberToKey(n) {
+                    // Map a pressed digit (1-4) back to its stored letter key.
+                    return String.fromCharCode(64 + n);
                 },
 
                 formatExplanation(text) {
