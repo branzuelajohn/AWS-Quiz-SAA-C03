@@ -26,3 +26,39 @@ def test_missing_app_password_fails_fast():
     )
     assert result.returncode != 0
     assert "APP_PASSWORD" in result.stderr
+
+
+def test_page_requires_login(client):
+    resp = client.get("/", follow_redirects=False)
+    assert resp.status_code == 302
+    assert "/login" in resp.headers["Location"]
+
+
+def test_api_requires_login_returns_401(client):
+    resp = client.get("/api/tags")
+    assert resp.status_code == 401
+
+
+def test_login_page_is_public(client):
+    resp = client.get("/login")
+    assert resp.status_code == 200
+
+
+def test_wrong_password_rejected(client):
+    resp = client.post("/login", data={"password": "wrong"})
+    assert resp.status_code == 401
+
+
+def test_correct_password_grants_access(client):
+    resp = client.post("/login", data={"password": "testpass"}, follow_redirects=False)
+    assert resp.status_code == 302
+    resp2 = client.get("/api/tags")
+    assert resp2.status_code == 200
+
+
+def test_logout_clears_session(client):
+    client.post("/login", data={"password": "testpass"})
+    client.get("/logout")
+    resp = client.get("/", follow_redirects=False)
+    assert resp.status_code == 302
+    assert "/login" in resp.headers["Location"]

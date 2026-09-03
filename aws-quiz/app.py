@@ -34,10 +34,41 @@ def ensure_db():
 @app.before_request
 def csrf_check():
     """Reject POST requests without JSON content type (CSRF protection)."""
+    # The login form posts form-encoded data; it is exempt from the JSON check.
+    if request.endpoint == 'login':
+        return
     if request.method == 'POST' and request.content_type != 'application/json':
         return jsonify({'error': 'Content-Type must be application/json'}), 415
 
+@app.before_request
+def require_login():
+    """Gate every route behind the shared password."""
+    if request.endpoint in ('login', 'logout', 'static'):
+        return
+    if not session.get('authenticated'):
+        if request.path.startswith('/api/'):
+            return jsonify({'error': 'Not authenticated'}), 401
+        return redirect(url_for('login'))
+
 # --- Page Routes ---
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    """Shared-password login."""
+    if request.method == 'POST':
+        password = request.form.get('password', '')
+        if secrets.compare_digest(password, APP_PASSWORD):
+            session['authenticated'] = True
+            session.permanent = True
+            return redirect(url_for('index'))
+        return render_template('login.html', error='Incorrect password'), 401
+    return render_template('login.html', error=None)
+
+@app.route('/logout')
+def logout():
+    """Clear the session and return to the login page."""
+    session.clear()
+    return redirect(url_for('login'))
 
 @app.route('/')
 def index():
