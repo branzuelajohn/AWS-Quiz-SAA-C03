@@ -34,7 +34,7 @@
 <body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
     <div x-data="quizApp()" x-init="init()" x-cloak
          @keydown.window="handleKeyboard($event)"
-         class="container mx-auto px-4 py-8 max-w-4xl">
+         class="container mx-auto px-3 py-5 sm:px-4 sm:py-8 max-w-4xl">
 
         <!-- Toast Notification -->
         <div x-show="toastVisible"
@@ -50,13 +50,13 @@
         </div>
 
         <!-- Header -->
-        <div class="flex justify-between items-center mb-8">
-            <h1 class="text-3xl font-bold text-orange-400">AWS SAA-C03 Quiz</h1>
+        <div class="flex justify-between items-center mb-6 sm:mb-8">
+            <h1 class="text-xl sm:text-3xl font-bold text-orange-400">AWS SAA-C03 Quiz</h1>
             <div class="flex gap-3">
-                <a href="/dashboard" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition">
+                <a href="/dashboard" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg transition text-sm sm:text-base">
                     Dashboard
                 </a>
-                <a href="/logout" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition">
+                <a href="/logout" class="bg-gray-700 hover:bg-gray-600 px-3 py-2 rounded-lg transition text-sm sm:text-base">
                     Log out
                 </a>
             </div>
@@ -70,8 +70,8 @@
              x-transition:leave="transition ease-in duration-200"
              x-transition:leave-start="opacity-100 scale-100"
              x-transition:leave-end="opacity-0 scale-95"
-             class="bg-gray-800 rounded-xl p-8">
-            <h2 class="text-2xl font-semibold mb-6">Start a Quiz Session</h2>
+             class="bg-gray-800 rounded-xl p-5 sm:p-8">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-6">Start a Quiz Session</h2>
 
             <!-- Question Count -->
             <div class="mb-6">
@@ -151,7 +151,7 @@
             <!-- Start Button -->
             <button @click="startSession()"
                     :disabled="loading"
-                    class="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-600 py-4 rounded-lg font-semibold text-lg transition">
+                    class="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-600 py-4 rounded-lg font-semibold text-base sm:text-lg transition">
                 <span x-show="!loading">Start Quiz</span>
                 <span x-show="loading">Loading...</span>
             </button>
@@ -184,7 +184,7 @@
             </div>
 
             <!-- Question Card -->
-            <div class="bg-gray-800 rounded-xl p-6">
+            <div class="bg-gray-800 rounded-xl p-4 sm:p-6">
                 <!-- Tags -->
                 <div x-show="currentQuestion.tags && currentQuestion.tags.length > 0" class="mb-4 flex flex-wrap gap-2">
                     <template x-for="tag in currentQuestion.tags" :key="tag">
@@ -196,7 +196,7 @@
                 <div class="text-gray-500 text-sm mb-2">Question #<span x-text="currentQuestion.question_number"></span></div>
 
                 <!-- Question Text -->
-                <p class="text-lg mb-6 leading-relaxed" x-text="currentQuestion.question_text"></p>
+                <p class="text-base sm:text-lg mb-6 leading-relaxed" x-text="currentQuestion.question_text"></p>
 
                 <!-- Options -->
                 <div class="space-y-3">
@@ -211,7 +211,7 @@
                                 'bg-red-600': answered && selectedAnswer === key && key !== correctAnswer,
                                 'bg-gray-700 opacity-50': answered && key !== correctAnswer && key !== selectedAnswer
                             }"
-                            class="w-full p-4 rounded-lg text-left transition flex items-start gap-3">
+                            class="w-full p-3 sm:p-4 rounded-lg text-left transition flex items-start gap-3 text-sm sm:text-base">
                             <span class="bg-gray-600 px-2 py-1 rounded text-sm font-mono" x-text="keyToNumber(key)"></span>
                             <span x-text="text"></span>
                         </button>
@@ -268,8 +268,8 @@
              x-transition:leave="transition ease-in duration-200"
              x-transition:leave-start="opacity-100 scale-100"
              x-transition:leave-end="opacity-0 scale-95"
-             class="bg-gray-800 rounded-xl p-8">
-            <h2 class="text-2xl font-semibold mb-6 text-center">Session Complete!</h2>
+             class="bg-gray-800 rounded-xl p-5 sm:p-8">
+            <h2 class="text-xl sm:text-2xl font-semibold mb-6 text-center">Session Complete!</h2>
 
             <!-- SVG Score Circle -->
             <div class="flex justify-center mb-8">
@@ -289,7 +289,7 @@
                     </svg>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center">
-                            <div class="text-4xl font-bold" x-text="score"></div>
+                            <div class="text-3xl sm:text-4xl font-bold" x-text="score"></div>
                             <div class="text-gray-400">of <span x-text="totalQuestions"></span></div>
                             <div class="text-lg font-semibold"
                                  :class="scorePercent >= 70 ? 'text-green-400' : 'text-orange-400'"
