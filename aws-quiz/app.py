@@ -57,7 +57,7 @@ def login():
     """Shared-password login."""
     if request.method == 'POST':
         password = request.form.get('password', '')
-        if secrets.compare_digest(password, APP_PASSWORD):
+        if secrets.compare_digest(password.encode('utf-8'), APP_PASSWORD.encode('utf-8')):
             session['authenticated'] = True
             session.permanent = True
             return redirect(url_for('index'))

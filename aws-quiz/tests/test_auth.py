@@ -62,3 +62,15 @@ def test_logout_clears_session(client):
     resp = client.get("/", follow_redirects=False)
     assert resp.status_code == 302
     assert "/login" in resp.headers["Location"]
+
+
+def test_non_ascii_password_rejected_cleanly(client):
+    """A non-ASCII password must return 401, not a 500 from compare_digest."""
+    resp = client.post("/login", data={"password": "wrong-café"})
+    assert resp.status_code == 401
+
+
+def test_login_form_post_not_blocked_by_csrf(client):
+    """Form-encoded POST to /login must be exempt from the JSON CSRF check (not 415)."""
+    resp = client.post("/login", data={"password": "wrong"})
+    assert resp.status_code != 415
