@@ -1,0 +1,662 @@
+{
+ "5": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "7": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "13": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "15": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: empty"
+ ],
+ "19": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "29": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "33": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "39": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "62": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "A is a fragment of D"
+ ],
+ "63": [
+  "B: empty"
+ ],
+ "70": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "71": [
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "76": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "92": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: empty"
+ ],
+ "94": [
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "96": [
+  "may refer to missing figure"
+ ],
+ "106": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "110": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "114": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "115": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "127": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "132": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "135": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "138": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "140": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "141": [
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "158": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "160": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "162": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "169": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "170": [
+  "C: empty"
+ ],
+ "176": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "180": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: empty",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "188": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "193": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "198": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "207": [
+  "B: empty",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "212": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "213": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "215": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "220": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "221": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "223": [
+  "B: empty",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "231": [
+  "A: empty",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "237": [
+  "A: contains answer text instead of an option",
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "243": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "246": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "250": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "251": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "duplicate options"
+ ],
+ "252": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "253": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "missing policy JSON"
+ ],
+ "262": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "duplicate options"
+ ],
+ "268": [
+  "B: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "272": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "correct answer split across B and C"
+ ],
+ "282": [
+  "B: empty"
+ ],
+ "290": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "294": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "299": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "301": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "302": [
+  "key A does not match Choose two",
+  "says Choose two but key has one letter"
+ ],
+ "307": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "314": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "324": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "327": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "333": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "337": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "340": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "F: empty",
+  "option letters are ABCDF"
+ ],
+ "344": [
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "346": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "347": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "352": [
+  "C: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "362": [
+  "D: empty",
+  "E: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "363": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "374": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "382": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "390": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "408": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "411": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "413": [
+  "A is a fragment of D"
+ ],
+ "417": [
+  "C: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "422": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "423": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "refers to missing policy image"
+ ],
+ "429": [
+  "refers to missing policy image"
+ ],
+ "435": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "437": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "439": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: contains answer text instead of an option",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "D is a fragment of B"
+ ],
+ "448": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: contains answer text instead of an option",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "451": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "E: no ending punctuation (maybe truncated, often a false alarm)",
+  "F: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "460": [
+  "no question sentence"
+ ],
+ "461": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "463": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "465": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "466": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "469": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "470": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "471": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "472": [
+  "B: contains answer text instead of an option",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "473": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "no question sentence; options cut off"
+ ],
+ "474": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "475": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "476": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "477": [
+  "A: empty",
+  "B: empty",
+  "C: empty",
+  "D: empty",
+  "duplicate options"
+ ],
+ "479": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "481": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "482": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "487": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "494": [
+  "refers to missing policy image"
+ ],
+ "502": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "504": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: contains answer text instead of an option",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "507": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "510": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "511": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "515": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "E: no ending punctuation (maybe truncated, often a false alarm)",
+  "F: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "518": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "521": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "523": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "529": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "537": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "B is a fragment of A",
+  "B is a fragment of D"
+ ],
+ "541": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "545": [
+  "B: empty",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "549": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "568": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "599": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "E: no ending punctuation (maybe truncated, often a false alarm)",
+  "F: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "620": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "625": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "626": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "636": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "637": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "639": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "640": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "650": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "655": [
+  "E: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "659": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "679": [
+  "F: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "700": [
+  "E: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "701": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "712": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "729": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "740": [
+  "note: SSE-C not valid for default encryption (keep key, just check text)"
+ ],
+ "756": [
+  "option letters are ABD"
+ ],
+ "836": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "840": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "844": [
+  "B: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "858": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "868": [
+  "option letters are BCD"
+ ],
+ "925": [
+  "may refer to missing figure"
+ ],
+ "936": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)",
+  "E: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "938": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "939": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "942": [
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "946": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "951": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "961": [
+  "A: no ending punctuation (maybe truncated, often a false alarm)",
+  "B: no ending punctuation (maybe truncated, often a false alarm)",
+  "C: no ending punctuation (maybe truncated, often a false alarm)",
+  "D: no ending punctuation (maybe truncated, often a false alarm)"
+ ],
+ "985": [
+  "C: no ending punctuation (maybe truncated, often a false alarm)"
+ ]
+}
