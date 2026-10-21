@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b3fd8"/><stop offset="1" stop-color="#6a4fe0"/></linearGradient></defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <path d="M120 300c40 60 230 70 290 0" fill="none" stroke="#f59e0b" stroke-width="28" stroke-linecap="round"/>
+  <path d="M380 270l40 22-14 44" fill="none" stroke="#f59e0b" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="250" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="800" font-size="150" fill="#ffffff">SAA</text>
+</svg>
